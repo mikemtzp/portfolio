@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => setNav(!nav);
+
   const navSections = [
     ['Home', '/'],
     ['About', '/#about'],
@@ -30,19 +34,40 @@ const Navbar = () => {
             {navSections.map(([title, url]) => (
               <Link href={url} key={title} className='ml-4 relative group'>
                 <div className='absolute -inset-0.5 rounded-lg -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
-                <li className='bg-black text-sm text-gray-300 rounded-md p-1'>
+                <li className='bg-black text-sm text-gray-300 rounded-md p-1 border-l font-semibold'>
                   {title}
                 </li>
               </Link>
             ))}
           </ul>
         </div>
-        <div className='relative h-5 w-6 group md:hidden cursor-pointer'>
-            <div className='absolute -inset-0.5 rounded -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
+        <div
+          onClick={handleNav}
+          className='relative h-5 w-6 p-1 group md:hidden cursor-pointer'
+        >
+          <div className='absolute -inset-0.5 rounded -z-10 opacity-0 transition duration-700 group-active:opacity-100 group-active:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
           <div className='relative flex flex-col h-full justify-center items-center'>
-            <span className='block rounded bg-gray-300 w-5 h-0.5 -translate-y-1'></span>
-            <span className='block rounded bg-gray-300 w-5 h-0.5'></span>
-            <span className='block rounded bg-gray-300 w-5 h-0.5 translate-y-1'></span>
+            <span
+              className={
+                nav
+                  ? 'block rounded bg-gray-300 w-5 h-0.5 translate-y-0.5 origin-center rotate-45 transition duration-500'
+                  : 'block rounded bg-gray-300 w-5 h-0.5 -translate-y-1 transition duration-500'
+              }
+            ></span>
+            <span
+              className={
+                nav
+                  ? 'block rounded bg-gray-300 w-5 h-0.5 transition duration-150 opacity-0'
+                  : 'block rounded bg-gray-300 w-5 h-0.5 opacity-100 transition duration-1000'
+              }
+            ></span>
+            <span
+              className={
+                nav
+                  ? 'block rounded bg-gray-300 w-5 h-0.5 -translate-y-0.5 origin-center -rotate-45 transition duration-500'
+                  : 'block rounded bg-gray-300 w-5 h-0.5 translate-y-1 transition duration-500'
+              }
+            ></span>
           </div>
         </div>
       </div>

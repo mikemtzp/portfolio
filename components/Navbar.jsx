@@ -26,7 +26,7 @@ const Navbar = () => {
           />
         </div>
         <div>
-          <ul className='flex'>
+          <ul className='hidden md:flex'>
             {navSections.map(([title, url]) => (
               <Link href={url} key={title} className='ml-4 relative group'>
                 <div className='absolute -inset-0.5 rounded-lg -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
@@ -36,6 +36,14 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
+        </div>
+        <div className='relative h-5 w-6 group md:hidden cursor-pointer'>
+            <div className='absolute -inset-0.5 rounded -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
+          <div className='relative flex flex-col h-full justify-center items-center'>
+            <span className='block rounded bg-gray-300 w-5 h-0.5 -translate-y-1'></span>
+            <span className='block rounded bg-gray-300 w-5 h-0.5'></span>
+            <span className='block rounded bg-gray-300 w-5 h-0.5 translate-y-1'></span>
+          </div>
         </div>
       </div>
     </div>

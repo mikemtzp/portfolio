@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 const Navbar = () => {
+  const router = useRouter();
   const [nav, setNav] = useState(false);
 
   const handleNav = () => setNav(!nav);
@@ -32,12 +34,21 @@ const Navbar = () => {
         <div>
           <ul className='hidden md:flex'>
             {navSections.map(([title, url]) => (
-              <Link href={url} key={title} className='ml-4 relative group'>
-                <div className='absolute -inset-0.5 rounded-lg -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
-                <li className='bg-black text-sm text-gray-300 rounded-md p-1 border-l font-semibold'>
+              <li key={title} className='relative group ml-4'>
+                {router.asPath !== `${url}` ? (
+                  <div className='absolute -inset-0.5 rounded-lg -z-10 opacity-0 transition duration-700 group-hover:opacity-75 group-hover:transition bg-gradient-to-tr from-purple-600 to-green-600'></div>
+                ) : null}
+                <Link
+                  href={url}
+                  className={
+                    router.asPath === `${url}`
+                      ? 'bg-gradient-to-tr from-purple-600 to-green-600 bg-opacity-75 text-sm text-gray-300 rounded-md p-1 font-semibold'
+                      : 'bg-black text-sm text-gray-300 rounded-md p-1 border-l font-semibold'
+                  }
+                >
                   {title}
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

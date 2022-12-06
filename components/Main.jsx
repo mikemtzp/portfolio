@@ -6,14 +6,14 @@ const Main = () => {
   return (
     <div className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-        <div className='flex flex-col items-center'>
-          <Image
+        <div className='flex flex-col items-center justify-end'>
+          {/* <Image
             src='/blob.svg'
             alt='blob'
             width={100}
             height={100}
             className='opacity-90'
-          />
+          /> */}
           <h1 className='text-gray-200 my-2 cursor-default'>
             Hello there! I&apos;m{' '}
             <span className='bg-clip-text text-transparent inline-block bg-gradient-to-tr from-purple-600 to-green-600'>
@@ -21,7 +21,7 @@ const Main = () => {
             </span>
           </h1>
           <h2 className='cursor-default'>Full-Stack Developer</h2>
-          <p className='text-lg text-gray-200 my-5 max-width[70%] m-auto py-3 px-5'>
+          <p className='text-lg text-gray-200 my-5 max-width[70%] m-auto px-5'>
             I have a passion for creating intuitive and user-friendly web
             applications that solve real-world problems. With a strong
             background in both Front-end and Back-end development, I have the

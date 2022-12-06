@@ -2,13 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaMediumM,
-  FaAngellist,
-  FaTwitter,
-} from 'react-icons/fa';
+import { socialIcons } from '../data';
 
 const Navbar = () => {
   const router = useRouter();
@@ -22,17 +16,6 @@ const Navbar = () => {
     ['Skills', '/#skills'],
     ['Projects', '/#projects'],
     ['Contact', '/#contact'],
-  ];
-
-  const socialIcons = [
-    [
-      <FaLinkedinIn key='' />,
-      'https://www.linkedin.com/in/mike-mart%C3%ADnez/',
-    ],
-    [<FaTwitter key='' />, 'https://twitter.com/mikemtzp'],
-    [<FaGithub key='' />, 'https://github.com/mikemtzp'],
-    [<FaMediumM key='' />, 'https://mikemtzp.medium.com/'],
-    [<FaAngellist key='' />, 'https://angel.co/u/mikemtzp'],
   ];
 
   return (

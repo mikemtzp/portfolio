@@ -31,6 +31,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.icon-icons.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.datocms-assets.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.iconsdb.com',
+      },
     ],
   },
 }

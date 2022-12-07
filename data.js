@@ -31,6 +31,11 @@ export const skills = [
     'React',
   ],
   [
+    'https://nextjs.org/',
+    'https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png',
+    'Nextjs',
+  ],
+  [
     'https://redux.js.org',
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
     'Redux',
@@ -100,6 +105,11 @@ export const skills = [
     'https://materializecss.com/',
     'https://pics.freeicons.io/uploads/icons/png/2396380601551941189-512.png',
     'Materialize',
+  ],
+  [
+    'https://www.vercel.com/',
+    'https://www.iconsdb.com/icons/preview/white/triangle-xxl.png',
+    'Vercel',
   ],
   [
     'https://www.netlify.com/',

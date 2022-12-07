@@ -44,7 +44,7 @@ const Navbar = () => {
                     href={url}
                     className={
                       router.asPath === `${url}`
-                        ? 'bg-gradient-to-tr from-purple-600 to-green-600 bg-opacity-75 text-sm text-gray-300 rounded-md p-1 font-semibold cursor-default'
+                        ? 'bg-gradient-to-tr from-purple-600 to-green-600 bg-opacity-75 text-sm text-black rounded-md p-1 font-semibold cursor-default'
                         : 'bg-black text-sm text-gray-300 rounded-md p-1 border-l font-semibold'
                     }
                   >

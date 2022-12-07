@@ -27,3 +27,9 @@
     @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
 }
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent inline-block bg-gradient-to-tr from-purple-600 to-green-600
+  }
+}

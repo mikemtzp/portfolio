@@ -16,7 +16,7 @@ const Main = () => {
           /> */}
           <h1 className='text-gray-200 my-2 cursor-default'>
             Hello there! I&apos;m{' '}
-            <span className='bg-clip-text text-transparent inline-block bg-gradient-to-tr from-purple-600 to-green-600'>
+            <span className='gradient-text'>
               Mike
             </span>
           </h1>

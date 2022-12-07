@@ -53,7 +53,7 @@ export const skills = [
   [
     'https://rubyonrails.org',
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg',
-    'Ruby on Rails',
+    'Rails',
   ],
   [
     'https://rspec.info/',
@@ -89,7 +89,7 @@ export const skills = [
   [
     'https://tailwindcss.com/',
     'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
-    'Tailwind CSS',
+    'Tailwind',
   ],
   [
     'https://getbootstrap.com',
@@ -99,7 +99,7 @@ export const skills = [
   [
     'https://mui.com/',
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
-    'Material UI',
+    'MUI',
   ],
   [
     'https://materializecss.com/',
@@ -139,6 +139,6 @@ export const skills = [
   [
     'https://www.npmjs.com/',
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
-    'npm',
+    'NPM',
   ],
 ];

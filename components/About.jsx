@@ -34,7 +34,7 @@ const About = () => {
             learning new technologies.
           </p>
         </div>
-        <div className='w-fit xl:w-auto h-auto m-auto shadow-xl shadow-slate-800 rounded-xl p-4 hover:scale-105 ease-in duration-300'>
+        <div className='w-fit xl:w-auto h-auto m-auto shadow-xl shadow-slate-800 rounded-xl p-4 hover:scale-105 ease-in duration-300 hover:shadow-slate-600'>
           <Image
             src='/../public/assets/dommie.jpeg'
             alt=''

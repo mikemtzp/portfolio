@@ -5,8 +5,8 @@ import dommie from '../public/assets/dommie.jpeg';
 
 const Projects = () => {
   return (
-    <div className='w-full'>
-      <div className='max-w-[1240px] mx-auto px-2 py-16'>
+    <div id='projects' className='w-full'>
+      <div className='max-w-[1240px] mx-auto py-16'>
         <p className='gradient-text uppercase tracking-widest pl-5 xl:pl-0 '>Projects</p>
         <h2 className='pl-5 xl:pl-0 sm:mb-5'>What I&apos;ve built</h2>
         <div className='grid sm:grid-cols-2 gap-8 mx-4 lg:mx-0'>

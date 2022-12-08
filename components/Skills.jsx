@@ -4,7 +4,7 @@ import { skills } from '../data';
 
 const Skills = () => {
   return (
-    <div className='w-full h-auto md:h-screen pt-16 px-2 pb-2 mt-5 md:mt-0'>
+    <div id='skills' className='w-full h-auto md:h-screen pt-16 px-2 pb-2 mt-5 md:mt-0'>
       <div className='max-w-[1240px] h-full mx-auto flex flex-col justify-center'>
         <p className='uppercase gradient-text tracking-widest pl-5 xl:pl-0'>
           Skills

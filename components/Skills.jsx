@@ -9,7 +9,7 @@ const Skills = () => {
         <p className='uppercase gradient-text tracking-widest pl-5 xl:pl-0'>
           Skills
         </p>
-        <h2 className='pl-5 xl:pl-0 sm:mb-5'>My tech stack</h2>
+        <h2 className='pl-5 xl:pl-0 mb-3 sm:mb-5'>My tech stack</h2>
         <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 2xl:flex 2xl:flex-wrap 2xl:gap-8 place-content-center justify-items-center gap-5 m-4'>
           {skills.map(([url, image, tech]) => (
             <a className='max-w-[100px] w-full min-w-fit' href={url} key={tech} target='_blank' rel='noopener noreferrer'>

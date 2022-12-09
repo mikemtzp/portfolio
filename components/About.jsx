@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='w-full h-auto p-2 flex items-center'>
+    <div id='about' className='w-full h-auto pt-32 p-2 flex items-center'>
       <div className=' max-w-[1240px] m-auto lg:grid grid-cols-3 gap-6'>
         <div className='col-span-2 pl-5 pr-5 lg:pr-0 xl:pl-0'>
           <p className='uppercase gradient-text tracking-widest'>About</p>
@@ -34,7 +34,7 @@ const About = () => {
             learning new technologies.
           </p>
         </div>
-        <div className='w-fit xl:w-auto h-auto m-auto shadow-xl shadow-slate-800 rounded-xl p-4 hover:scale-105 ease-in duration-300'>
+        <div className='w-fit xl:w-auto h-auto m-auto shadow-xl shadow-slate-800 rounded-xl p-4 hover:scale-105 ease-in duration-300 hover:shadow-slate-600'>
           <Image
             src='/../public/assets/dommie.jpeg'
             alt=''

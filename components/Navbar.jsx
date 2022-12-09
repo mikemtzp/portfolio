@@ -2,21 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { socialIcons } from '../data';
+import navSections from '../data/navSections';
+import socialIcons from '../data/socialIcons';
 
 const Navbar = () => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
 
   const handleNav = () => setNav(!nav);
-
-  const navSections = [
-    ['Home', '/'],
-    ['About', '/#about'],
-    ['Skills', '/#skills'],
-    ['Projects', '/#projects'],
-    ['Contact', '/#contact'],
-  ];
 
   return (
     <nav>
@@ -44,7 +37,7 @@ const Navbar = () => {
                     href={url}
                     className={
                       router.asPath === `${url}`
-                        ? 'bg-gradient-to-tr from-purple-600 to-green-600 bg-opacity-75 text-sm text-gray-300 rounded-md p-1 font-semibold cursor-default'
+                        ? 'bg-gradient-to-tr from-purple-600 to-green-600 bg-opacity-75 text-sm text-black rounded-md p-1 font-semibold cursor-default'
                         : 'bg-black text-sm text-gray-300 rounded-md p-1 border-l font-semibold'
                     }
                   >

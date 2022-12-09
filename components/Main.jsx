@@ -1,6 +1,6 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
-import { socialIcons } from '../data';
+import socialIcons from '../data/socialIcons';
 
 const Main = () => {
   return (

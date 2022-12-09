@@ -2,21 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { socialIcons } from '../data';
+import navSections from '../data/navSections';
+import socialIcons from '../data/socialIcons';
 
 const Navbar = () => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
 
   const handleNav = () => setNav(!nav);
-
-  const navSections = [
-    ['Home', '/'],
-    ['About', '/#about'],
-    ['Skills', '/#skills'],
-    ['Projects', '/#projects'],
-    ['Contact', '/#contact'],
-  ];
 
   return (
     <nav>

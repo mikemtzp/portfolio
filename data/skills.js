@@ -1,20 +1,4 @@
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaMediumM,
-  FaAngellist,
-  FaTwitter,
-} from 'react-icons/fa';
-
-export const socialIcons = [
-  [<FaLinkedinIn key='' />, 'https://www.linkedin.com/in/mike-mart%C3%ADnez/'],
-  [<FaTwitter key='' />, 'https://twitter.com/mikemtzp'],
-  [<FaGithub key='' />, 'https://github.com/mikemtzp'],
-  [<FaMediumM key='' />, 'https://mikemtzp.medium.com/'],
-  [<FaAngellist key='' />, 'https://angel.co/u/mikemtzp'],
-];
-
-export const skills = [
+const skills = [
   [
     'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
@@ -142,3 +126,5 @@ export const skills = [
     'NPM',
   ],
 ];
+
+export default skills;

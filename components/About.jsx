@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import dommy from '../public/assets/dommy.jpeg'
 
 const About = () => {
   return (
@@ -36,11 +37,12 @@ const About = () => {
         </div>
         <div className='w-fit xl:w-auto h-auto m-auto shadow-xl shadow-slate-800 rounded-xl p-4 hover:scale-105 ease-in duration-300 hover:shadow-slate-600'>
           <Image
-            src='/../public/assets/dommie.jpeg'
+            src={dommy}
             alt=''
             width={320}
             height={450}
             className='rounded-xl h-72 w-56 md:h-auto md:w-auto'
+            priority
           />
         </div>
       </div>

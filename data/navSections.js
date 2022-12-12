@@ -3,7 +3,7 @@ const navSections = [
   ['About', '/#about'],
   ['Skills', '/#skills'],
   ['Projects', '/#projects'],
-  ['Contact', '/#contact'],
+  // ['Contact', 'mailto:mikemp8226@gmail.com'],
 ];
 
 export default navSections;

@@ -27,8 +27,20 @@ html {
     @apply cursor-pointer
   }
 
+  label {
+    @apply text-gray-200 uppercase text-sm
+  }
+
+  input {
+    @apply border-2 rounded-lg p-2 my-1 outline-none focus:shadow-[1px_2px_10px_4px_rgba(88,28,135,0.9)]
+  }
+
+  textarea {
+    @apply border-2 rounded-lg p-2 my-1 outline-none resize-none focus:shadow-[1px_2px_10px_4px_rgba(88,28,135,0.9)]
+  }
+
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply bg-black rounded-xl py-2 text-gray-200
   }
 }
 
